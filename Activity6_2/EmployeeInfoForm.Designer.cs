@@ -53,24 +53,28 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(54, 25);
+            this.label1.Location = new System.Drawing.Point(144, 60);
+            this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(177, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "EmployeeID:";
             // 
             // txtEmpID
             // 
-            this.txtEmpID.Location = new System.Drawing.Point(149, 22);
+            this.txtEmpID.Location = new System.Drawing.Point(397, 52);
+            this.txtEmpID.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.txtEmpID.Name = "txtEmpID";
-            this.txtEmpID.Size = new System.Drawing.Size(100, 20);
+            this.txtEmpID.Size = new System.Drawing.Size(260, 38);
             this.txtEmpID.TabIndex = 1;
+            this.txtEmpID.TextChanged += new System.EventHandler(this.txtEmpID_TextChanged);
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(295, 19);
+            this.btnClose.Location = new System.Drawing.Point(787, 45);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.Size = new System.Drawing.Size(200, 55);
             this.btnClose.TabIndex = 2;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -78,9 +82,10 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(394, 19);
+            this.btnReset.Location = new System.Drawing.Point(1051, 45);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.Size = new System.Drawing.Size(200, 55);
             this.btnReset.TabIndex = 3;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
@@ -88,21 +93,25 @@
             // 
             // btnNewEmp
             // 
-            this.btnNewEmp.Location = new System.Drawing.Point(78, 80);
+            this.btnNewEmp.Location = new System.Drawing.Point(208, 191);
+            this.btnNewEmp.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnNewEmp.Name = "btnNewEmp";
-            this.btnNewEmp.Size = new System.Drawing.Size(113, 23);
+            this.btnNewEmp.Size = new System.Drawing.Size(301, 55);
             this.btnNewEmp.TabIndex = 4;
             this.btnNewEmp.Text = "New Employee";
             this.btnNewEmp.UseVisualStyleBackColor = true;
+            this.btnNewEmp.Click += new System.EventHandler(this.btnNewEmp_Click);
             // 
             // btnExistingEmp
             // 
-            this.btnExistingEmp.Location = new System.Drawing.Point(234, 80);
+            this.btnExistingEmp.Location = new System.Drawing.Point(624, 191);
+            this.btnExistingEmp.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnExistingEmp.Name = "btnExistingEmp";
-            this.btnExistingEmp.Size = new System.Drawing.Size(125, 23);
+            this.btnExistingEmp.Size = new System.Drawing.Size(333, 55);
             this.btnExistingEmp.TabIndex = 5;
             this.btnExistingEmp.Text = "Existing Employee";
             this.btnExistingEmp.UseVisualStyleBackColor = true;
+            this.btnExistingEmp.Click += new System.EventHandler(this.btnExistingEmp_Click);
             // 
             // groupBox1
             // 
@@ -111,51 +120,58 @@
             this.groupBox1.Controls.Add(this.txtLoginName);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(57, 119);
+            this.groupBox1.Location = new System.Drawing.Point(152, 284);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(412, 84);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.groupBox1.Size = new System.Drawing.Size(1099, 200);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Security Info";
             // 
             // btnUpdateSI
             // 
-            this.btnUpdateSI.Location = new System.Drawing.Point(308, 20);
+            this.btnUpdateSI.Location = new System.Drawing.Point(821, 48);
+            this.btnUpdateSI.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnUpdateSI.Name = "btnUpdateSI";
-            this.btnUpdateSI.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdateSI.Size = new System.Drawing.Size(200, 55);
             this.btnUpdateSI.TabIndex = 4;
             this.btnUpdateSI.Text = "Update";
             this.btnUpdateSI.UseVisualStyleBackColor = true;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(92, 51);
+            this.txtPassword.Location = new System.Drawing.Point(245, 122);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(161, 20);
+            this.txtPassword.Size = new System.Drawing.Size(423, 38);
             this.txtPassword.TabIndex = 3;
             // 
             // txtLoginName
             // 
-            this.txtLoginName.Location = new System.Drawing.Point(92, 20);
+            this.txtLoginName.Location = new System.Drawing.Point(245, 48);
+            this.txtLoginName.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.txtLoginName.Name = "txtLoginName";
-            this.txtLoginName.Size = new System.Drawing.Size(161, 20);
+            this.txtLoginName.Size = new System.Drawing.Size(423, 38);
             this.txtLoginName.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 51);
+            this.label3.Location = new System.Drawing.Point(56, 122);
+            this.label3.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 13);
+            this.label3.Size = new System.Drawing.Size(147, 32);
             this.label3.TabIndex = 1;
             this.label3.Text = "Password:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 20);
+            this.label2.Location = new System.Drawing.Point(56, 48);
+            this.label2.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 13);
+            this.label2.Size = new System.Drawing.Size(169, 32);
             this.label2.TabIndex = 0;
             this.label2.Text = "LoginName:";
             // 
@@ -166,59 +182,66 @@
             this.groupBox2.Controls.Add(this.txtSSN);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(57, 210);
+            this.groupBox2.Location = new System.Drawing.Point(152, 501);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(412, 100);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.groupBox2.Size = new System.Drawing.Size(1099, 238);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "HR Info";
             // 
             // btnUpdateHR
             // 
-            this.btnUpdateHR.Location = new System.Drawing.Point(308, 16);
+            this.btnUpdateHR.Location = new System.Drawing.Point(821, 38);
+            this.btnUpdateHR.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnUpdateHR.Name = "btnUpdateHR";
-            this.btnUpdateHR.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdateHR.Size = new System.Drawing.Size(200, 55);
             this.btnUpdateHR.TabIndex = 4;
             this.btnUpdateHR.Text = "Update";
             this.btnUpdateHR.UseVisualStyleBackColor = true;
             // 
             // txtDepartment
             // 
-            this.txtDepartment.Location = new System.Drawing.Point(92, 54);
+            this.txtDepartment.Location = new System.Drawing.Point(245, 129);
+            this.txtDepartment.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.txtDepartment.Name = "txtDepartment";
-            this.txtDepartment.Size = new System.Drawing.Size(161, 20);
+            this.txtDepartment.Size = new System.Drawing.Size(423, 38);
             this.txtDepartment.TabIndex = 3;
             // 
             // txtSSN
             // 
-            this.txtSSN.Location = new System.Drawing.Point(92, 20);
+            this.txtSSN.Location = new System.Drawing.Point(245, 48);
+            this.txtSSN.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.txtSSN.Name = "txtSSN";
-            this.txtSSN.Size = new System.Drawing.Size(161, 20);
+            this.txtSSN.Size = new System.Drawing.Size(423, 38);
             this.txtSSN.TabIndex = 2;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 54);
+            this.label5.Location = new System.Drawing.Point(56, 129);
+            this.label5.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 13);
+            this.label5.Size = new System.Drawing.Size(171, 32);
             this.label5.TabIndex = 1;
             this.label5.Text = "Department:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 20);
+            this.label4.Location = new System.Drawing.Point(56, 48);
+            this.label4.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.Size = new System.Drawing.Size(81, 32);
             this.label4.TabIndex = 0;
             this.label4.Text = "SSN:";
             // 
             // EmployeeInfoForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 321);
+            this.ClientSize = new System.Drawing.Size(1333, 765);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnExistingEmp);
@@ -227,6 +250,7 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.txtEmpID);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "EmployeeInfoForm";
             this.Text = "Employee Info";
             this.groupBox1.ResumeLayout(false);

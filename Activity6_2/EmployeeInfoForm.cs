@@ -23,12 +23,33 @@ namespace Activity6_2
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            txtEmpID.Text = "";
-            txtEmpID.Enabled = true;
+            Employee oEmployee = new Employee();
+            txtEmpID.Text = oEmployee.EmpID.ToString();
+            txtEmpID.Enabled = false;
             txtLoginName.Text = "";
             txtPassword.Text = "";
             txtSSN.Text = "";
             txtDepartment.Text = "";
+        }
+       
+        private void btnNewEmp_Click(object sender, EventArgs e)
+        {
+            Employee oEmployee = new Employee();
+        }
+
+        private void txtEmpID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExistingEmp_Click(object sender, EventArgs e)
+        {
+            Employee oEmployee = new Employee(int.Parse(txtEmpID.Text));
+            txtEmpID.Enabled = false;
+            txtLoginName.Text = oEmployee.LoginName;
+            txtPassword.Text = oEmployee.PassWord;
+            txtSSN.Text = oEmployee.SSN.ToString();
+            txtDepartment.Text = oEmployee.Department;
         }
     }
 }
