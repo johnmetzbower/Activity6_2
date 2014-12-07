@@ -35,8 +35,10 @@ namespace Activity6_2
         private void btnNewEmp_Click(object sender, EventArgs e)
         {
             Employee oEmployee = new Employee();
+
             txtEmpID.Enabled = false;
             txtEmpID.Text = oEmployee.EmpID.ToString();
+
             txtLoginName.Text = oEmployee.LoginName;
             txtPassword.Text = oEmployee.PassWord;
             txtSSN.Text = oEmployee.SSN.ToString();
