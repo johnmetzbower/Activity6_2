@@ -21,16 +21,16 @@ namespace Activity6_2
             return 100;
         }
 
-        public Employee()
-        {
-            _empID = GetNextID();
-        }
+        // the parameterless (default) constructor
+        // will call the other one
+        public Employee(): this(0) { }
     
     
         public Employee(int empID)
-          
-
         {
+            if (empID == 0)
+                empID = GetNextID();
+
             //Constructor for existing employee
             //Simulates retrieval from database
             if (empID == 1)
