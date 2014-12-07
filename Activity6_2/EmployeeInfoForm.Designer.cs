@@ -138,6 +138,7 @@
             this.btnUpdateSI.TabIndex = 4;
             this.btnUpdateSI.Text = "Update";
             this.btnUpdateSI.UseVisualStyleBackColor = true;
+            this.btnUpdateSI.Click += new System.EventHandler(this.btnUpdateSI_Click);
             // 
             // txtPassword
             // 
@@ -200,6 +201,7 @@
             this.btnUpdateHR.TabIndex = 4;
             this.btnUpdateHR.Text = "Update";
             this.btnUpdateHR.UseVisualStyleBackColor = true;
+            this.btnUpdateHR.Click += new System.EventHandler(this.btnUpdateHR_Click);
             // 
             // txtDepartment
             // 

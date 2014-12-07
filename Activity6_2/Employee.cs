@@ -7,6 +7,21 @@ namespace Activity6_2
 {
     class Employee
     {
+
+        public string Update(string loginName, string password)
+        {
+            LoginName = loginName;
+            PassWord  = password;
+            return "Security info updated.";
+        }
+
+        public string Update(int ssNumber, string department)
+        {
+            SSN = ssNumber;
+            Department = department;
+            return "HR info updated.";
+        }
+
         private int _empID;
         private string _loginName;
         private string _passWord;

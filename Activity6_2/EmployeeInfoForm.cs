@@ -35,6 +35,12 @@ namespace Activity6_2
         private void btnNewEmp_Click(object sender, EventArgs e)
         {
             Employee oEmployee = new Employee();
+            txtEmpID.Enabled = false;
+            txtEmpID.Text = oEmployee.EmpID.ToString();
+            txtLoginName.Text = oEmployee.LoginName;
+            txtPassword.Text = oEmployee.PassWord;
+            txtSSN.Text = oEmployee.SSN.ToString();
+            txtDepartment.Text = oEmployee.Department;
         }
 
         private void txtEmpID_TextChanged(object sender, EventArgs e)
@@ -48,6 +54,22 @@ namespace Activity6_2
             txtEmpID.Enabled = false;
             txtLoginName.Text = oEmployee.LoginName;
             txtPassword.Text = oEmployee.PassWord;
+            txtSSN.Text = oEmployee.SSN.ToString();
+            txtDepartment.Text = oEmployee.Department;
+        }
+
+        private void btnUpdateSI_Click(object sender, EventArgs e)
+        {
+            Employee oEmployee = new Employee(int.Parse(txtEmpID.Text));
+            MessageBox.Show(oEmployee.Update(txtLoginName.Text, txtPassword.Text));
+            txtLoginName.Text = oEmployee.LoginName;
+            txtPassword.Text = oEmployee.PassWord;
+        }
+
+        private void btnUpdateHR_Click(object sender, EventArgs e)
+        {
+            Employee oEmployee = new Employee(int.Parse(txtEmpID.Text));
+            MessageBox.Show(oEmployee.Update(int.Parse(txtSSN.Text), txtDepartment.Text));
             txtSSN.Text = oEmployee.SSN.ToString();
             txtDepartment.Text = oEmployee.Department;
         }
